@@ -1,0 +1,105 @@
+<!---Registration From--->
+<!DOCTYPE html>
+<html>
+<head>
+	<TITLE>Registration form</TITLE>
+<!---CSS link--->
+	<link rel = "stylesheet" type = "text/css" href = "styles.css" />
+</head>
+<body>
+	<h1>Registration form</h1>
+	<!---JS link--->
+	<script src = "myscripts.js"></script>
+	<img src="sa.jpg" alt="Logo" width="100" height="100">
+	<div id = "regisform">
+		<form action="script.php"methods"">
+		<label for="first">Firstname :</label>
+		<input type="Text" name="first" placeholder="e.g.Kabir" required>
+		<label for ="lastname">Lastname : </label>
+		<input type="Text" name="lastname" placeholder="e.g.Singh" required="">
+		<!---onblur validation--->
+		<br>
+		<p>When you leave the input field, a function is triggered which transforms the input text to upper case using onblur.</p>
+
+	Enter your Username: <input type="text" name="fname" id="fname" onblur="myFunction()">
+
+		<br>
+		
+        <p>Write Username in the text field to trigger a oninput function.</p>
+    <input type="text" id="myInput" oninput="myFunction2()">
+    <p id="demo"></p>
+
+	</div>
+	<br>
+    <div>
+    	<label for ="gender-male">Male</label>
+    	<input type="radio" name="gender-choice" value="choice-1">
+        <label for ="gender-female">Female</label>
+    	<input type="radio" name="gender-choice" value="choice-2"><br>
+    	<label for ="gender-others">Others</label>
+    	<input type="radio" name="gender-choice" value="choice-3">
+    </div>
+    <br><br>
+    <div>
+    	<label for = "Email">Email</label>
+    	<input type="email" name="email" placeholder="e.g.abc@gmail.com" required><br>
+    	<!---
+    	<label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        --->
+
+    <table border="0" cellpadding="3" cellspacing="0">
+    <tr>
+        <td>
+            Password:
+        </td>
+        <td>
+            <input type="password" id="txtPassword" required />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Confirm Password:
+        </td>
+        <td>
+            <input type="password" id="txtConfirmPassword" required />
+        </td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+        <td>
+            <input type="button" id="btnSubmit" value="check password" onclick="return Validate()" />
+        </td>
+    </tr>
+</table>
+    <br><br>
+    <element onclick="myScript">
+    <p>The onclick event is used to trigger a function when an element is clicked on.</p>
+    <button onclick="myFunction3()">Click me</button>
+    <p id="demo1"></p>
+
+
+
+    <hr>
+    	<br><br>
+<!---using checkbox--->
+    	<label for ="agree">I agree to the T&C.</label>
+    	<input type="checkbox" name="agree" required>
+    <br>
+    <div class="btn-group">
+        <button>Register</button>
+     </div>
+
+    </div>
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+<script src="myscripts.js"></script>
+</form>
+
+</body>
+</html>
